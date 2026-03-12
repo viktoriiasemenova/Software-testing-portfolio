@@ -15,3 +15,7 @@ This repository contains my practice and projects in software testing.
 -Jira
 -Postman
 -Git
+
+#Tested applications 
+-https://zoobonus.ua
+
