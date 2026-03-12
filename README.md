@@ -17,5 +17,6 @@ This repository contains my practice and projects in software testing.
 -Git
 
 #Tested applications 
--https://zoobonus.ua
+-SauceDemo
+
 
