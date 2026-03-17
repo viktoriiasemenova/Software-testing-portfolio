@@ -1,0 +1,12 @@
+Login Page Checklist
+
+- Username field visible
+- Password field visible
+- Login button visible
+- Login works with valid credentials
+- Error message appears for invalid password
+- Error message appears for empty username
+- Error message appears for empty password
+- Login blocked for locked_out_user
+- Password field masks characters
+- Page responsive on different screen sizes

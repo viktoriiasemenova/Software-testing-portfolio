@@ -1,0 +1,12 @@
+Checkout Checklist
+
+- Cart page opens correctly
+- Checkout button visible
+- First Name field validation
+- Last Name field validation
+- Zip Code field validation
+- Error messages displayed for empty fields
+- Continue button works
+- Order summary displayed correctly
+- Finish button completes order
+- Confirmation message displayed after order

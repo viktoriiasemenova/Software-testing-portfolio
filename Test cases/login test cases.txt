@@ -1,0 +1,174 @@
+
+TC01 Login with valid credentials
+  Steps: 
+1. Open SauceDemo website
+2. Enter valid username
+3. Enter valid password
+4. Click login
+  Test Data
+   username: standard_user
+   password: secret_sauce	
+  Expected result:
+  User successfully logged in and redirected to Products page
+TC02 Login with invalid password
+  Steps: 
+1. Open login page
+2. Enter valid username 
+3. Enter wrong password 
+4. Click Login
+  Test Data
+username: standard_user, password: wrong26
+  Expected result:
+Error message displayed: “Username and password do not match any user in this service”	
+TC03 Login with empty fields
+  Steps: 
+1. Open login page
+2. Leave username and password epmty
+3. Click Login
+  Test Data
+ empty fields
+  Expected result:
+Error message: “Username is required”	
+TC04 Add product to cart
+  Steps: 
+1. login
+2. Click "Add to cart" on a product
+  Test Data
+ standard_user
+  Expected result:
+Product added to cart, cart icon count increases
+TC05 Remove product from cart
+  Steps: 
+1. login
+2. Add to cart
+3. Click "Remove"
+  Test Data
+ standard_user
+  Expected result:
+Product removed from cart, cart icon count decreases
+TC06 Open product details
+  Steps: 
+1. login
+2. Click on product name
+  Test Data
+ standard_user
+  Expected result:
+Product details page opens, displays image, price, description
+TC07 Sort products by price (low to high)
+  Steps: 
+1. Login
+2. Select sorting "Price (low to high)"
+  Test Data
+ standard_user
+  Expected result:
+Product sorted ascending by price
+TC08 Open cart page
+  Steps: 
+1. Login
+2. Click cart icon
+  Test Data
+ standard_user
+  Expected result:
+Product sorted ascending by price
+TC09 Start checkout process
+Steps: 
+1. Login
+2. Add product to cart
+3. Open cart
+4. Click Checkout
+  Test Data
+ standard_user
+  Expected result:
+Checkout information page opens
+TC10 Complete checkout
+Steps: 
+1. Login
+2. Add product to cart
+3. Checkout
+4. Enter user info
+5. Finish order
+  Test Data
+ Viktoriia, Semenova, 52-227
+  Expected result:
+Order completed successfully, confirmation page shown
+
+
+TC11 Login with invalid username
+Steps: 
+1. Open login page
+2. Enter invalid username
+3. Enter valid password
+4. Click login
+  Test Data
+ Username: wrong_user, password:secret_sauce
+  Expected result:
+Error message: "Username and password do not match any user in this service"
+TC12 Login with SQL injection
+Steps: 
+1. Open login page
+2. Enter  SQL injection string in username and password fields
+3. Click login
+  Test Data
+ Username: '1'='1, password: '1'='1
+  Expected result:
+Login should fail. Error message displayed: "Username and password do tot match any user in this service"
+User should not be logged in
+TC13 Add to cart without loggin in (direct URL - https://www.saucedemo.com/inventory-item.html?id=4)
+Steps: 
+1. Go directly to product page
+2. Click "Add to cart"
+  Test Data
+  not logged in
+  Expected result:
+User redirected to login page
+TC14 Checkout with empty fields
+1. Add product to cart
+2. Open checkout
+3. Leave all fields empty
+4. Click continue
+  Test Data
+  empty fields
+  Expected result:
+Error message: "First name is required"
+TC15 Checkout with with invalid zip code
+1. Add product to cart
+2. Checkout
+3. Enter invalid zip code
+  Test Data
+  zip: www123
+  Expected result:
+Error message: "Postal code is invalid"
+
+TC16 Verify login page layout
+1. Open login page
+  Test Data
+  -
+  Expected result:
+Username, password fields, login button, logo visible
+TC17 Verify product image display
+1. Login
+2. Open products page
+  Test Data
+  standard_user
+  Expected result:
+All products image are shown correctly
+TC18 Verify button color and hover
+1. Login
+2. Hover over "Add to cart" button
+  Test Data
+  standard_user
+  Expected result:
+Button changes color on hover, clickable
+TC20 Verify responsive layout
+1. Resize browser to mobile width
+  Test Data
+  -
+  Expected result:
+Login and products page elements adjust correctly, not overlapping
+
+
+
+
+
+
+

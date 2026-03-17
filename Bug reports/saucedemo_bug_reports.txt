@@ -1,0 +1,209 @@
+Bug ID: BR01
+Title: Incorrect product image on product details page
+
+Environment:
+Browser: Chrome
+OS: Windows 10
+
+Steps to Reproduce:
+1. Login with problem_user
+2. Click any product on Products page
+
+Expected Result:
+Correct image for selected product should be displayed.
+
+Actual Result:
+Displayed image does not match the selected product.
+
+Severity: Medium
+Priority: Medium
+
+Bug ID: BR02
+Title: Cart icon does not update immediately after adding product
+
+Environment:
+Browser: Chrome
+OS: Windows 10
+Website: SauceDemo
+
+Steps to Reproduce:
+1. Open SauceDemo website
+2. Login with username: problem_user
+3. Password: secret_sauce
+4. Click "Add to cart" on a product
+
+Expected Result:
+Cart icon should immediately display updated number of items.
+
+Actual Result:
+Cart icon sometimes does not update until page refresh.
+
+Severity: Low
+Priority: Low
+
+Bug ID: BR03
+Title: Sort dropdown resets after page refresh
+
+Environment:
+Browser: Chrome
+OS: Windows 10
+Website: SauceDemo
+
+Steps to Reproduce:
+1. Login with standard_user
+2. Change sorting option to "Price (low to high)"
+3. Refresh the page
+
+Expected Result:
+Selected sorting option should remain active.
+
+Actual Result:
+Sorting resets to default option after refresh.
+
+Severity: Medium
+Priority: Medium
+
+Bug ID: BR04
+Title: Back button from product page returns to top of products list
+
+Environment:
+Browser: Chrome
+OS: Windows 10
+
+Steps to Reproduce:
+1. Login with standard_user
+2. Open any product details page
+3. Click "Back to products"
+
+Expected Result:
+User should return to the previous scroll position on the products page.
+
+Actual Result:
+Page returns to the top of the products list.
+
+Severity: Low
+Priority: Low
+
+Bug ID: BR05
+Title: Login button clickable with empty fields
+
+Environment:
+Browser: Chrome
+OS: Windows 10
+
+Steps to Reproduce:
+1. Open login page
+2. Leave username empty
+3. Leave password empty
+4. Click Login
+
+Expected Result:
+Login button should be disabled or show validation immediately.
+
+Actual Result:
+Button is clickable and error appears only after click.
+
+Severity: Low
+Priority: Low
+
+Bug ID: BR06
+Title: Cart icon not highlighted when cart page opened
+
+Environment:
+Browser: Chrome
+OS: Windows 10
+
+Steps to Reproduce:
+1. Login with standard_user
+2. Click cart icon
+
+Expected Result:
+Cart icon should be visually highlighted when cart page is open.
+
+Actual Result:
+Cart icon remains the same as other navigation icons.
+
+Severity: Low
+Priority: Low
+
+Bug ID: BR07
+Title: Product images remain incorrect after sorting products
+
+Environment:
+Browser: Chrome
+OS: Windows 10
+
+Steps to Reproduce:
+1. Login with problem_user
+2. On Products page select sorting option "Price (low to high)"
+
+Expected Result:
+Products should be sorted and display correct images.
+
+Actual Result:
+Products are sorted correctly but images remain incorrect.
+
+Severity: Low
+Priority: Low
+
+Bug ID: BR08
+Title: Same product image displayed for multiple different products
+
+Environment:
+Browser: Chrome
+OS: Windows 10
+
+Steps to Reproduce:
+1. Login with problem_user
+2. Observe products on the Products page
+
+Expected Result:
+Each product should have a unique image.
+
+Actual Result:
+Multiple products display identical images.
+
+Severity: Medium
+Priority: Medium
+
+Bug ID: BR09
+Title: Error message disappears after page refresh
+
+Environment:
+Browser: Chrome
+OS: Windows 10
+
+Steps to Reproduce:
+1. Open SauceDemo login page
+2. Enter incorrect username and password
+3. Click Login
+4. Refresh the page
+
+Expected Result:
+Error message should remain visible until user fixes input.
+
+Actual Result:
+Error message disappears after page refresh.
+
+Severity: Low
+Priority: Low
+
+Bug ID: BR10
+Title: Cart page accessible directly without adding items
+
+Environment:
+Browser: Chrome
+OS: Windows 10
+
+Steps to Reproduce:
+1. Login with standard_user
+2. Click cart icon without adding products
+
+Expected Result:
+System should display message like "Cart is empty".
+
+Actual Result:
+Cart page opens but no message indicating empty cart.
+
+Severity: Low
+Priority: Low
